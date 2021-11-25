@@ -2,8 +2,9 @@ body{
   margin: 0px;
   padding: 0px;
   border :0px;
-  font-size:x-large;
-  background-color: #B9E4EB;  
+  font-size:large;
+  background-color: #B9E4EB;     
+  overflow-x: hidden; 
 }
 .tittle{ 
   margin: 0;
@@ -24,30 +25,56 @@ span{
   text-align: center;
   font-size:x-large;
   }
+.Inicio:hover{
+  text-shadow: white 3px 3px 3px ;
+}
+.dropdown-menu{
+  background-color: #8BC7D0;
+}
 .btn{
   border: none;
 }
 
 .acuarofilia{
+  padding-left: 20px;
+  padding-right: 20px ;
   font-size: 90%;
   text-align: justify;
-  text-justify: inter-word;
   margin-top: 100px;
   background-color:transparent; 
+  border-left: #8BC7D0 3px solid;
+  border-right: #8BC7D0 3px solid;
+  
 }
-
 .layout{
   display: flex;
   flex-direction: column;
-  height: 100ch;
+  height:100%;
+}
 
-}
-.layout > main{
- height:100%;
-}
 
 .layout > .footer{
   padding: 5px;
   text-align: center;
   font-size: small; 
+}
+
+.img1{
+  padding: 0;
+  border-top: 3px solid #8BC7D0 ;
+  box-shadow: 5px 5px 5px rgb(56, 56, 56);  
+}
+.botonesAcuario{
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: #8BC7D0 3px solid;
+}
+.footer{
+  margin-top: 20px;
+}
+.botonesAcuarioInterior{
+  margin-top: 5px;
+  margin-bottom:5px ;
+  border: none;
+  box-shadow:#79878a 1px 1px 5px;
 }

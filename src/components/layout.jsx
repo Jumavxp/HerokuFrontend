@@ -22,10 +22,10 @@ const Layout = ({children}) => {
                     <div class="dropdown-toggle "  id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Categorias
                     </div>
-                    <ul class="dropdown-menu Inicio" aria-labelledby="navbarDropdown">
-                        <li><Link class="dropdown-item" to="/acuarios" >Acuarios</Link></li>
-                        <li><Link class="dropdown-item" to="/plantas">Plantas</Link></li>
-                        <li><Link class="dropdown-item" to="/peces">Peces Tropicales</Link></li>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><Link class="dropdown-item Inicio" to="/acuario" >Acuarios</Link></li>
+                        <li><Link class="dropdown-item Inicio" to="/plantas">Plantas</Link></li>
+                        <li><Link class="dropdown-item Inicio" to="/peces">Peces Tropicales</Link></li>
                     </ul>
                 </div>
                 <Link className="col Inicio" to="/productos" >
@@ -33,18 +33,31 @@ const Layout = ({children}) => {
                 </Link>
                   
                 <Link className="col Inicio " to="/admin">
-                    <button className="Inicio btn"> Admin</button>
+                    <button className="Inicio btn"> Iniciar Sesión</button>
                 </Link>      
         
             </div>            
         </div>   
         <main>{children}</main>
-        <footer className="container-flex footer">
+
+        <footer className="container-flex  footer">
             <div className="row justify-content-center">
                 <div className="col-4">
+
                     <p> 
-                        Amazonia Fish <span>Todos los derechos reservados</span> <span>2021</span>
+                        Amazonia Fish 
                     </p>    
+                    
+                    <p>2021</p>
+                </div>
+                <div className="col-4">
+                    <p>
+                        Disclaimer
+                    </p>
+                    <hr />
+                    <p>
+                        Las imagenes fueron tomadas con propositos de aprendizaje unicamente y sus derechos corresponden a sus respectivos autores
+                    </p>
                 </div>
             </div>
         </footer> 
