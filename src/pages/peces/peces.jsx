@@ -88,18 +88,8 @@ const Peces = () => {
                 <CardPeces imagen={zoro} nombre='Pez Zorro Volador' size='200 Litros' temp='Entre 20°C y 26°C' ph='De 5.5 a 6.5' diet='Omnívoros' long='15 Cm'/>
                 </div>
                 
-
-
+                
             </div>
-            
-           
-
-
-
-
-
-
-
         </div>
     )
 }

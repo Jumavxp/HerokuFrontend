@@ -3,7 +3,7 @@ import React from 'react'
 const CardPeces = (props) => {
     return (
         <div className="card">
-            <img className="card-img-top"src={props.imagen} alt="..." />
+            <img className="card-img-top"src={props.imagen} alt="..." height="225px"/>
             <div className="card-body">
                 <h5 className="card-title">{props.nombre}</h5>
                     <ul className="lista-peces">
