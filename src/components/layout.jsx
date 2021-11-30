@@ -18,11 +18,11 @@ const Layout = ({children}) => {
                     <button id="btn1" className="Inicio btn"> Pagina Principal</button>
                 </Link>
 
-                <div class="nav-item dropdown col Inicio">
-                    <div class="dropdown-toggle "  id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <div className="nav-item dropdown col Inicio">
+                    <div className="dropdown-toggle "  id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Categorias
                     </div>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                         <li><Link class="dropdown-item Inicio" to="/acuario" >Acuarios</Link></li>
                         <li><Link class="dropdown-item Inicio" to="/plantas">Plantas</Link></li>
                         <li><Link class="dropdown-item Inicio" to="/peces">Peces Tropicales</Link></li>

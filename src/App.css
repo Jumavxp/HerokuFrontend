@@ -55,7 +55,7 @@ span{
 
 .layout > .footer{
   padding: 5px;
-  text-align: center;
+  text-align: left;
   font-size: small; 
 }
 
@@ -71,10 +71,33 @@ span{
 }
 .footer{
   margin-top: 20px;
+  
+  border-top:#8BC7D0 solid 1px;
 }
 .botonesAcuarioInterior{
   margin-top: 5px;
   margin-bottom:5px ;
   border: none;
   box-shadow:#79878a 1px 1px 5px;
+}
+.titulo-peces{
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.card{
+  width: 20rem;
+  background-color: #a0d9e2;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.card-text{
+  font-size: small;
+}
+
+.peces{  
+  margin-left: 10px;
+}
+.lista-peces{
+  list-style:circle;
 }

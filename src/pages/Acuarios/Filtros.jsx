@@ -2,6 +2,8 @@ import React from 'react'
 import Data from "../../data/DataAcuarios/FiltrosData.json"
 import externo from "../../assets/Filtro-externo-para-acuario.jpg"
 import interno from "../../assets/filtro-interno.jpg"
+import arrow from "../../assets/2561330_arrow_left_icon (1).png"
+import { Link } from 'react-router-dom'
 
 const Filtros = () => {
     return (
@@ -75,6 +77,14 @@ const Filtros = () => {
             </div>
             <div className="row justify-content-center">
                 <img src={externo} alt="filtro" className="col-4 img1" />
+            </div>
+            <div className="row justify-content-center align-items-center">
+                <Link to="/acuario" className="col-4" >
+                    <img className="col-1" src={arrow} alt="arrow" height="50px" width="30px" />
+                    <div className="col align-content-baseline">
+                        <p>Regresar a Acuarios</p>
+                    </div>
+                </Link>
             </div>
         </div>
     )

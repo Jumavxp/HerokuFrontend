@@ -26,7 +26,7 @@ const Home = () => {
                         })}
                 </div>        
                 <div className="row justify-content-center">
-                    <img className="col-6 img1" src={acuario} alt="acuario" />
+                    <img className="col-5 img1" src={acuario} alt="acuario" />
                 </div>
                     
                                    

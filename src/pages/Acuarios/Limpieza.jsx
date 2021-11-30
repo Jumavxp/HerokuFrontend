@@ -1,6 +1,8 @@
 import React from 'react'
 import Data from "../../data/DataAcuarios/LimpiezaData.json"
 import cleans from "../../assets/limpieza.jpg"
+import arrow from "../../assets/2561330_arrow_left_icon (1).png"
+import { Link } from 'react-router-dom'
 
 
 const Limpieza = () => {
@@ -24,6 +26,14 @@ const Limpieza = () => {
                             <br /><hr /><br />
                             <div class="alert alert-danger" role="alert">
                                 {post.warning}
+                            </div>
+                            <div className="row align-items-center">
+                                <Link to="/acuario" className="row align-items-center">
+                                    <img className="col-1" src={arrow} alt="arrow" height="50px" width="30px" />
+                                    <div className="col align-content-baseline">
+                                        <p>Regresar a Acuarios</p>
+                                    </div>     
+                                </Link>                           
                             </div>
                         </div>
                     )
