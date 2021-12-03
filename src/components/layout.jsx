@@ -1,12 +1,17 @@
 import { Link } from "react-router-dom"
+import { useAuth0 } from "@auth0/auth0-react";
 
 const Layout = ({children}) => {
+
+    const { loginWithRedirect } = useAuth0();
+
+
     return( 
       <div className="layout">          
         <div className="container-fluid">
-            <div className="row align-items-center  logo">    
+            <div className="row align-items-center ">    
 
-                <Link to="/" className="btn Inicio"  role="button">  
+                <Link to="/" className="Inicio" >  
                         <h1 className="tittle">
                             Amazonia Fish
                         </h1>
@@ -15,26 +20,26 @@ const Layout = ({children}) => {
             <div className="row justify-content-between banner">                
                            
                 <Link className="col Inicio" to="/">
-                    <button id="btn1" className="Inicio btn"> Pagina Principal</button>
+                    <div id="btn1" > Pagina Principal</div>
                 </Link>
 
                 <div className="nav-item dropdown col Inicio">
-                    <div className="dropdown-toggle "  id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <div className="dropdown-toggle "  id="navbarDropdown" data-bs-toggle="dropdown" aria-expanded="false">
                         Categorias
                     </div>
                     <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><Link class="dropdown-item Inicio" to="/acuario" >Acuarios</Link></li>
-                        <li><Link class="dropdown-item Inicio" to="/plantas">Plantas</Link></li>
-                        <li><Link class="dropdown-item Inicio" to="/peces">Peces Tropicales</Link></li>
+                        <li><Link className="dropdown-item Inicio" to="/acuario" >Acuarios</Link></li>
+                        <li><Link className="dropdown-item Inicio" to="/plantas">Plantas</Link></li>
+                        <li><Link className="dropdown-item Inicio" to="/peces">Peces Tropicales</Link></li>
                     </ul>
                 </div>
                 <Link className="col Inicio" to="/productos" >
-                    <button  className=" Inicio btn" > Productos</button>
+                    <div> Productos</div>
                 </Link>
                   
-                <Link className="col Inicio " to="/admin">
-                    <button className="Inicio btn"> Iniciar Sesión</button>
-                </Link>      
+                
+                <button onClick={loginWithRedirect} className="col Inicio btn"> Iniciar Sesión</button>
+                 
         
             </div>            
         </div>   

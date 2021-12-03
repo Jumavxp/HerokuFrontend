@@ -5,35 +5,40 @@ body{
   font-size:large;
   background-color: #B9E4EB;     
   overflow-x: hidden; 
+  height: 100vh;
 }
 .tittle{ 
   margin: 0;
   font-size:60px;
   padding: 5px;
   border-bottom: 1px solid black;
+  text-align: center;
+  background-color: #8BC7D0;
 }
 span{  
   display: block;
 }    
+.btn{
+  border: none;
+}
 .Inicio{
   padding-top:5px ;
   padding-bottom: 10px;
   margin: 0px;
-  border-bottom: 1px solid black;   
   text-decoration: none;
   background-color: #8BC7D0;
   text-align: center;
   font-size:x-large;
+  color: black;
   }
 .Inicio:hover{
   text-shadow: white 3px 3px 3px ;
+  color: black;
 }
 .dropdown-menu{
   background-color: #8BC7D0;
 }
-.btn{
-  border: none;
-}
+
 
 .acuarofilia{
   padding-left: 20px;
@@ -51,7 +56,11 @@ span{
   flex-direction: column;
   height:100%;
 }
-
+.privateLayout{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
 
 .layout > .footer{
   padding: 5px;
@@ -104,4 +113,29 @@ span{
 }
 .lista-peces{
   list-style:circle;
+}
+.authError{
+  text-align: center;
+  font-size: x-large;  
+  height: 80vh;
+
+}
+.sidebar{
+  height: 100vh;
+  border-right: #8BC7D0 5px solid;
+  border-left: #8BC7D0 5px solid;
+}
+.adminCol{
+  height: 100vh;
+}
+.admin{    
+  border-left: 5px solid #8BC7D0;
+  height: 100vh;
+}
+.sidebarCol{
+  border-bottom: #8BC7D0 1px solid;
+  border-top: #8BC7D0 1px solid;
+  height: 10vh;
+  text-align: center;
+  
 }
