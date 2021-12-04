@@ -17,7 +17,7 @@ const Sidebar = () => {
                 <Link  to="/products/create-product"className="col sidebarCol"><br /> Crear Producto</Link>
                 <div className="col"><br /><br /></div>
                 <div className="col sidebarCol">
-                    <button onClick={()=>logout({ returnTo:'http://localhost:3000/'})}  className="btn">Cerrar Sesion</button>
+                    <button onClick={()=>logout({ returnTo:'https://fathomless-journey-33778.herokuapp.com/'})}  className="btn">Cerrar Sesion</button>
                 </div>
                
            </div>

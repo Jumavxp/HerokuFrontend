@@ -23,7 +23,7 @@ const App = () => {
       domain="amazonia-fish.us.auth0.com" 
       clientId="W9bArqw0DZ0LRv580rCOj67J0yglSxif" 
       // redirectUri={window.location.origin}
-      redirectUri="http://localhost:3000/login"
+      redirectUri="https://fathomless-journey-33778.herokuapp.com/login"
       audience="api-auth-afish"
       >
       <div className="App">
