@@ -37,7 +37,7 @@ export default class CreateProduct extends Component {
             price: this.state.price
         };
 
-        axios.post('http://localhost:4000/products/create-product', productObject)
+        axios.post('https://safe-headland-67992.herokuapp.com/products/create-product', productObject)
         .then(res => console.log(res.data));
 
         this.setState({

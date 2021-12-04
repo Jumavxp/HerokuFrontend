@@ -23,7 +23,7 @@ export default class EditProduct extends Component {
     componentDidMount(){
         if (this.props.match && this.props.match.params.postID) {
             const postID = this.props.match.params.postID
-            axios.get(`http://localhost:4000/products/update-product ${postID}`)
+            axios.get(`https://safe-headland-67992.herokuapp.com/products/update-product ${postID}`)
             .then(res =>{
                 this.setState({
                     name: res.data.name,
@@ -58,7 +58,7 @@ export default class EditProduct extends Component {
 
         if (this.props.match && this.props.match.params.postID) {
             const postID = this.props.match.params.postID
-        axios.put(`http://localhost:4000/products/update-product${postID}`, productObject)
+        axios.put(`https://safe-headland-67992.herokuapp.com/products/update-product${postID}`, productObject)
         .then((res) =>{
             console.log(res.data)
             console.log('Product successfully updated')

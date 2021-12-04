@@ -14,7 +14,7 @@ export default class Products extends Component{
     }
 
     componentDidMount() {
-        axios.get('http://localhost:4000/products/')
+        axios.get('https://safe-headland-67992.herokuapp.com/products/')
         .then(res =>{
             this.setState({
                 products: res.data

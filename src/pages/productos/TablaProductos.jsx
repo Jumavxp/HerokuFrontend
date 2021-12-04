@@ -12,7 +12,7 @@ export default  class TablaProductos extends Component {
 
     
     deleteProduct(){
-        axios.delete('http://localhost:4000/products/delete-product/' + this.props.obj._id)
+        axios.delete('https://safe-headland-67992.herokuapp.com/products/delete-product/' + this.props.obj._id)
         .then((res) =>{
             console.log('Product deleted successfully!')
             
