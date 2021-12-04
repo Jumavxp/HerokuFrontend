@@ -18,10 +18,10 @@ const Login = () => {
                     Welcome to Admin section                    
                 </h3>
           
-                <div className="row row-cols-1 justify-content-center ">
+                <div className="row row-cols-1 justify-content-center adminBody">
                     <div className="col-3">
-                        {// <img src={user.picture} alt={user.name} />
-    }
+                        <img src={user.picture} alt={user.name} />
+    
                         <h2>{user.name}</h2>
                         <p>{user.email}</p>
                     </div>

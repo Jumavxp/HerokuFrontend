@@ -33,7 +33,7 @@ const Layout = ({children}) => {
                         <li><Link className="dropdown-item Inicio" to="/peces">Peces Tropicales</Link></li>
                     </ul>
                 </div>
-                <Link className="col Inicio" to="/productos" >
+                <Link className="col Inicio" to="/products" >
                     <div> Productos</div>
                 </Link>
                   

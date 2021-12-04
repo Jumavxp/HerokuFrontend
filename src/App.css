@@ -129,8 +129,13 @@ span{
   height: 100vh;
 }
 .admin{    
+  padding-top: 150px;
   border-left: 5px solid #8BC7D0;
   height: 100vh;
+  
+}
+.adminBody{
+  margin-top: 50px;
 }
 .sidebarCol{
   border-bottom: #8BC7D0 1px solid;
@@ -138,4 +143,28 @@ span{
   height: 10vh;
   text-align: center;
   
+}
+.tablaProductos{
+  margin-top: 50px;
+  border: #8BC7D0 3px solid;
+  padding: 15px;
+  background-color: #a0d9e2;
+  
+}
+.tablaHead{
+  border-bottom: black 1px solid;
+}
+.tablaBody{
+  border-bottom: #8BC7D0 1px solid;
+  padding: 5px;
+}
+.col{
+  text-align: center;
+}
+.formCreate{  
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 200px;
+ border: #8BC7D0 5px solid; 
 }

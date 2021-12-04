@@ -6,21 +6,25 @@ import Home from './pages/home';
 import Plantas from './pages/plantas';
 import Peces from './pages/peces/peces';
 import Acuarios from './pages/Acuarios/Acuarios';
-import Productos from './pages/Productos';
+import Productos from './pages/productos/Productos';
 import Filtros from './pages/Acuarios/Filtros'
 import Limpieza from './pages/Acuarios/Limpieza';
 import Login from './pages/Login';
 import PrivateLayout from './components/PrivateLayout';
+import CreateProduct from './pages/productos/CreateProduct';
+import EditProduct from './pages/productos/EditProduct';
 import { Auth0Provider } from '@auth0/auth0-react';
 
 
 const App = () => {
+
   return (
     <Auth0Provider 
       domain="amazonia-fish.us.auth0.com" 
       clientId="W9bArqw0DZ0LRv580rCOj67J0yglSxif" 
       // redirectUri={window.location.origin}
       redirectUri="http://localhost:3000/login"
+      audience="api-auth-afish"
       >
       <div className="App">
         <Router>
@@ -67,14 +71,23 @@ const App = () => {
                 </Layout>
               </Route>
 
-              <Route path={["/productos"]}>
-                <Layout>
+              <Route path={["/products","/products/create-product" , "/products/edit-product/"]}>
+                <PrivateLayout>
                   <Switch>
-                    <Route path="/productos">
+
+                    <Route path="/products/create-product">
+                      <CreateProduct/>
+                    </Route>
+
+                    <Route path="/products/edit-product/">
+                      <EditProduct />
+                    </Route>
+
+                    <Route path="/products">
                       <Productos/>
                     </Route>
                   </Switch>
-                </Layout>
+                </PrivateLayout>
               </Route>
 
               <Route path={["/login"]}>
@@ -87,8 +100,7 @@ const App = () => {
                 </PrivateLayout>
               </Route>
 
-              <Route path="/:id"> Error 404 Pagina no disponible</Route>
-
+            
               <Route  path={['/']}>
                 <Layout>
                   <Switch>
